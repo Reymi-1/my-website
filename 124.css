@@ -1,0 +1,76 @@
+body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; /* центр по горизонтали */
+      align-items: center;     /* центр по вертикали */
+      background: #111;
+
+       /* Настройка фонового изображения */
+      background-image: url("https://images.wallpapershq.com/wallpapers/4851/wallpaper_4851_2560x1440.jpg");
+      background-size: cover;       /* картинка растягивается на весь экран */
+      background-position: center;  /* центрируем */
+      background-repeat: no-repeat; /* не повторяется */
+
+      font-family: sans-serif;
+    }
+
+    .rainbow-block {
+      width: 800px;         /* ширина блока */
+      height: 90vh;         /* почти во всю высоту экрана */
+      background: #50514f;
+      border: 10px solid transparent; /* чтобы граница была под градиентом */
+      border-image: linear-gradient(180deg, rgb(10, 38, 1), rgb(10, 84, 10), rgb(12, 106, 39));
+      border-image-slice: 1; /* делает градиент по всему бордеру */
+      border-radius: 30px;   /* скруглённые углы */
+      box-shadow: 0 0 30px rgba(255,255,255,0.2);
+
+       /* Центрируем текст внутри */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    /*кнопка*/
+    .button {
+	padding: 1.05em 2.6em;
+	color: var(--white-color);
+	background-color: var(--green-color);
+	border: 1.5px solid transparent;
+	border-radius: 10em 0 10em 10em;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: .21em;
+	text-transform: uppercase;
+	font-size: .65em;
+	cursor: pointer;
+}
+
+.button--top {
+	background-color: transparent;
+	border-color: var(--green-color);
+	margin: 0 2em 0 3em;
+}
+
+.button--main {
+	margin-top: 3em;
+	padding: 1.6em 3.5em;
+}
+
+.button:hover {
+	background-color: var(--green-color);
+}
+
+:root {
+	--white-color: #fff;
+	--gray-color: #aeb4a6;
+	--green-color: #2e562a;
+	--index: calc(1vw + 1vh);
+	--transition: ease-in-out;
+}
