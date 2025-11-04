@@ -1,0 +1,20 @@
+body{
+    background-color: darkred;
+}
+p{
+    font-size: 50px;
+    color: black;
+    background-color: indigo;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+}
+table{
+    border: 5px double blue;
+    width: 50%;
+    font-style: 30px;
+}
+th,td{
+    border: 2px solid purple;
+    width: 25%;
+}
